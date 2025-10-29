@@ -31,7 +31,7 @@ try:
 
         #2. Comandos SQL:
         
-
+#teste commit 1
 except Error as e:
     print(f"Erro ao conectar ao MySQL : {e}")
 
