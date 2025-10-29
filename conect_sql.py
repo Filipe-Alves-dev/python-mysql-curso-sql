@@ -9,7 +9,7 @@ from mysql.connector import Error # Ajuda a lidar com erros de conexão
 SERVIDOR = "localhost" #localhost ou nome do servidor
 USUARIO = "root" #Nome do usuário
 SENHA = "jesus" #Senha do usuário
-BANCO_DE_DADOS =  "curso_sql" #Nome do banco de dados 
+BANCO_DE_DADOS =  "cadastro" #Nome do banco de dados 
 
 
 try:
@@ -30,6 +30,7 @@ try:
         cursor = conexao.cursor()
 
         #2. Comandos SQL:
+        comando_sql = "show databases;"
         
 #teste commit 1
 except Error as e:
