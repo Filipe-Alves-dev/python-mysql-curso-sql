@@ -30,7 +30,14 @@ try:
         cursor = conexao.cursor()
 
         #2. Comandos SQL:
-        comando_sql = "show databases;"
+        comando_sql = 'alter table cursos add column nota float;'
+
+        #3. Executar o comando SQL
+        cursor.execute(comando_sql)
+
+        #4. Confirmar as alterações no banco de dados
+        conexao.commit()
+        print("Comando SQL executado com sucesso.")
         
 #teste commit 1
 except Error as e:
